@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura base - JQuery</title>
+    <title>Eventos - JQuery</title>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -11,12 +11,17 @@
     <script>
         //Ao carregar o documento
         $(document).ready(function () {
-            
+            //Evento de click
+            $("button").click(function() {
+                //Adiciona um texto em H1
+                $("h1").html("Clicou no botão");
+            });
         });
     </script>
 
 </head>
 <body>
-    
+    <h1></h1>
+    <button>Clique aqui</button>
 </body>
 </html>

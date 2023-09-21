@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura base - JQuery</title>
+    <title>Alterar Atributos - JQuery</title>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -11,12 +11,13 @@
     <script>
         //Ao carregar o documento
         $(document).ready(function () {
-            
+            //Selecionar e alterar o img
+            $("img").attr("width", "700");        
         });
     </script>
 
 </head>
 <body>
-    
+    <img src="https://jornaldaparaiba.com.br/wp-content/uploads/2021/01/Interestellar-534x300.jpg" width="100">
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos - JQuery</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        //Ao carregar o documento
+        $(document).ready(function () {
+            //Exibir
+            $("#exibir").click(function(){
+                $("img").show();
+            });
+
+            //Ocultar
+            $("#ocultar").click(function(){
+                $("img").hide();
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br>
+    <img src="https://jornaldaparaiba.com.br/wp-content/uploads/2021/01/Interestellar-534x300.jpg" alt="Teste">
+</body>
+</html>
